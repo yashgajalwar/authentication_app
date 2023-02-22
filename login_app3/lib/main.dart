@@ -8,6 +8,7 @@ import 'package:login_app3/auth_page.dart';
 import 'package:login_app3/utils.dart';
 import 'package:login_app3/signup_widget.dart';
 import 'package:login_app3/utils.dart';
+import 'package:login_app3/verify_email.dart';
 
 import 'utils.dart';
 
@@ -54,7 +55,7 @@ class MainPage extends StatelessWidget {
           } else if (snapshot.hasError) {
             return Center(child: Text('Something went wrong!'));
           } else if (snapshot.hasData) {
-            return HomePage();
+            return VerifyEmailPage();
           } else {
             return AuthPage();
           }
